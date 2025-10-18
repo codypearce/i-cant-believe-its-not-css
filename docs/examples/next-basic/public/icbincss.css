@@ -1,0 +1,23 @@
+:root {
+  --ux-brand-500: #2266ee;
+  --ux-space-4: 16px;
+}
+
+@layer components {
+.card {
+  padding: var(--ux-space-4);
+}
+
+button.primary {
+  background: var(--ux-brand-500);
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  button.primary {
+    background: #1144cc;
+  }
+
+}
+
+}

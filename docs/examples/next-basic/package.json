@@ -1,0 +1,20 @@
+{
+  "name": "icbincss-next-basic-example",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "i-cant-believe-its-not-css": "file:../../../",
+    "next": "^14.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "19.1.12",
+    "typescript": "^5.4.2"
+  }
+}

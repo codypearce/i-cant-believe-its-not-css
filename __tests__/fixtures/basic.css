@@ -1,0 +1,9 @@
+:root {
+  --brand-500: #2266ee;
+}
+
+button.primary {
+  color: #fff;
+  background: var(--brand-500);
+}
+

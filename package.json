@@ -1,0 +1,97 @@
+{
+  "name": "i-cant-believe-its-not-css",
+  "version": "0.1.0",
+  "description": "I can't believe it's not CSS, the SQL styling solution",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./integrations/vite": {
+      "types": "./dist/integrations/vite.d.ts",
+      "import": "./dist/integrations/vite.js",
+      "require": "./dist/integrations/vite.cjs"
+    },
+    "./integrations/nextjs": {
+      "types": "./dist/integrations/nextjs.d.ts",
+      "import": "./dist/integrations/nextjs.js",
+      "require": "./dist/integrations/nextjs.cjs"
+    }
+  },
+  "bin": {
+    "icbincss": "dist/cli/index.js",
+    "icbin-css": "dist/cli/index.js",
+    "icbinc": "dist/cli/index.js"
+  },
+  "scripts": {
+    "prebuild": "node scripts/build-parser.cjs",
+    "build": "tsup",
+    "pretest": "node scripts/build-parser.cjs",
+    "postbuild": "chmod +x dist/cli/index.js || true",
+    "dev": "tsup --watch",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "bench": "npm run build && node scripts/bench.cjs --n=1000",
+    "watch": "node dist/cli/index.js watch",
+    "doctor": "node dist/cli/index.js doctor",
+    "inspect": "node dist/cli/index.js inspect",
+    "verify": "npm run build && node scripts/verify-dist.cjs",
+    "db:verify": "node dist/cli/index.js db verify",
+    "lint": "eslint src/**/*.ts",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run verify && npm test"
+  },
+  "keywords": [
+    "css",
+    "sql",
+    "styling",
+    "preprocessor",
+    "notcss"
+  ],
+  "author": "BAMP Labs",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "homepage": "https://www.npmjs.com/package/i-cant-believe-its-not-css",
+  "bugs": {
+    "url": "https://github.com/codypearce/i-cant-believe-its-not-css/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codypearce/i-cant-believe-its-not-css.git"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "dist/",
+    "README.md"
+  ],
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.11.24",
+    "@typescript-eslint/eslint-plugin": "^7.1.1",
+    "@typescript-eslint/parser": "^7.1.1",
+    "esbuild": "^0.25.10",
+    "eslint": "^8.57.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.2",
+    "tsup": "^8.5.0",
+    "typescript": "^5.4.2"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "chokidar": "^3.6.0",
+    "commander": "^12.0.0",
+    "fs-extra": "^11.2.0",
+    "peggy": "^5.0.6",
+    "uuid": "^13.0.0"
+  }
+}

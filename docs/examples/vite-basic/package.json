@@ -1,0 +1,18 @@
+{
+  "name": "icbincss-vite-basic-example",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.2",
+    "vite": "^5.0.0"
+  },
+  "dependencies": {
+    "i-cant-believe-its-not-css": "file:../../../"
+  }
+}

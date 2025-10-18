@@ -1,0 +1,11 @@
+.card {
+  padding: 16px;
+}
+
+@container main (min-width: 600px) {
+  .card {
+    padding: 24px;
+  }
+
+}
+

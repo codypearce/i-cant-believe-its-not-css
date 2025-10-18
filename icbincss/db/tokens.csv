@@ -1,0 +1,5 @@
+id,name,value,source_file,created_in_migration,deleted_at_iso
+1e6eecff-70dc-5320-b0a9-09821b659910,brand/500,#2266ee,/Users/cody/projects/notcss/icbincss/migrations/up/001_init.sql,001_init,
+24ccc119-9836-5c45-a659-b8076a8e8b43,space/4,16px,/Users/cody/projects/notcss/icbincss/migrations/up/001_init.sql,001_init,
+cd82bc1d-1e2d-56f2-b36e-2ed8a2ecb215,accent/red,#ff4444,/Users/cody/projects/notcss/icbincss/migrations/up/20251018194435__test_comprehensive.sql,20251018194435__test_comprehensive,
+6a51374c-4d86-5767-9840-f25c54192da7,spacing/lg,32px,/Users/cody/projects/notcss/icbincss/migrations/up/20251018194435__test_comprehensive.sql,20251018194435__test_comprehensive,

@@ -1,0 +1,5 @@
+{
+  "tokenVarPrefix": "ux-",
+  "defaultLayers": ["base", "components", "overrides"],
+  "outFile": "public/icbincss.css"
+}

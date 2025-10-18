@@ -1,0 +1,5 @@
+{
+  "tokenVarPrefix": "ux-",
+  "defaultLayers": ["base", "components", "overrides"],
+  "outFile": "assets/not.css"
+}
