@@ -55,8 +55,7 @@
   "author": "BAMP Labs",
   "license": "MIT",
   "publishConfig": {
-    "access": "public",
-    "provenance": true
+    "access": "public"
   },
   "homepage": "https://www.npmjs.com/package/i-cant-believe-its-not-css",
   "bugs": {

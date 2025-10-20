@@ -92,6 +92,8 @@ npm install -D i-cant-believe-its-not-css
 npx icbincss init
 ```
 
+> **Why install first?** Installing adds it to your `package.json` (version control + team collaboration), and makes `npx` use your local version. You'll also need the package installed to use Vite/Next.js integrations or to import the compiler functions.
+
 This creates an `icbincss/` directory with migrations and database folders.
 
 ### Write Your First Styles
