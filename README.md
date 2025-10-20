@@ -1,3 +1,7 @@
+<div align="center">
+  <img src="docs/logo.png" alt="ICBINCSS Logo" width="200" />
+</div>
+
 # 🧈 I Can't Believe It's Not CSS (ICBINCSS)
 
 [![npm](https://img.shields.io/npm/v/i-cant-believe-its-not-css.svg)](https://www.npmjs.com/package/i-cant-believe-its-not-css)

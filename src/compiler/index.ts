@@ -216,8 +216,8 @@ export function buildRules(ast: MigrationFileAST): { tokens: Map<string, string>
             if (r.features && r.features.length) bundle.features = r.features.slice();
             resp = bundle;
           }
-          if (r.type === 'Supports') {
-            // pure supports-only bucket
+          if (r.type === 'Supports' && !resp) {
+            // pure supports-only bucket (only if no media/container set)
             resp = { kind: 'supports', condition: (r as any).condition } as any;
             supportsCond = undefined;
           }
@@ -283,9 +283,11 @@ export function buildRules(ast: MigrationFileAST): { tokens: Map<string, string>
               applyToBucket(media);
             }
             break;
-          } else if ((r as any).supports) {
+          }
+          if ((r as any).supports) {
             supportsCond = (r as any).supports;
-          } else if (r.type === 'WidthBetween') {
+          }
+          if (r.type === 'WidthBetween') {
             const min = normalizeValue(r.min);
             const max = normalizeValue(r.max);
             resp = { kind: 'media', min: min || undefined, max: max || undefined };
@@ -312,8 +314,8 @@ export function buildRules(ast: MigrationFileAST): { tokens: Map<string, string>
             if (r.max) bundle.max = normalizeValue(r.max) || undefined;
             if (r.features && r.features.length) bundle.features = r.features.slice();
             resp = bundle;
-          } else if ((r as any).type === 'Supports') {
-            // pure supports-only bucket for ALTER
+          } else if ((r as any).type === 'Supports' && !resp) {
+            // pure supports-only bucket for ALTER (only if no media/container set)
             resp = { kind: 'supports', condition: (r as any).condition } as any;
             supportsCond = undefined;
           }

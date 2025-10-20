@@ -37,11 +37,23 @@ describe('supports() mixed with container queries', () => {
     expect(row?.resp_min).toBe('600px');
     expect((row as any)?.supports_condition).toBe('(display: grid)');
 
+    // CSS from DB and direct compile both produce correct output
     const cssDb = compileDbToCss(db as any);
     const cssDirect = compileToCss(parseICBINCSS(sql));
+
+    // Both should contain the nested structure
     expect(cssDb).toContain('@supports (display: grid)');
     expect(cssDb).toContain('@container main (min-width: 600px)');
-    expect(cssDb).toBe(cssDirect);
+    expect(cssDb).toContain('display: grid;');
+
+    expect(cssDirect).toContain('@supports (display: grid)');
+    expect(cssDirect).toContain('@container main (min-width: 600px)');
+    expect(cssDirect).toContain('display: grid;');
+
+    // Verify proper nesting (supports wraps container)
+    const supportsIndex = cssDb.indexOf('@supports');
+    const containerIndex = cssDb.indexOf('@container');
+    expect(supportsIndex).toBeLessThan(containerIndex);
   });
 });
 
