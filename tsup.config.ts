@@ -19,6 +19,7 @@ export default defineConfig({
     'commander',
     'fs-extra',
     'peggy',
+    'uuid',
   ],
   // Keep CLI executable
   onSuccess: 'chmod +x dist/cli/index.js || true',
