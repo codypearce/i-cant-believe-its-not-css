@@ -2,3 +2,6 @@ id,filename,direction,checksum,applied_at_iso,duration_ms,status
 001_init,001_init.sql,up,de3be4e561190bc1d582218567eb336ede4b48ec,2025-10-18T19:06:13.130Z,6,ok
 20251018192449__supports_mix,20251018192449__supports_mix.sql,up,91b00fced002335892e7e13f35dfb5da4f856abf,2025-10-18T19:25:10.701Z,6,ok
 20251018194435__test_comprehensive,20251018194435__test_comprehensive.sql,up,0657784e27106b34b680ce8692417334c13d56d1,2025-10-18T19:45:17.507Z,8,ok
+002_change_button_color,002_change_button_color.sql,up,de3be4e561190bc1d582218567eb336ede4b48ec,2025-10-20T12:21:17.692Z,7,ok
+002_change_button_color,002_change_button_color.sql,down,bf8efe16efe3169a6e1170dbbbacf2d42a2aba49,2025-10-20T12:33:37.423Z,11,ok
+002_change_button_color,002_change_button_color.sql,up,de3be4e561190bc1d582218567eb336ede4b48ec,2025-10-20T13:26:02.702Z,8,ok

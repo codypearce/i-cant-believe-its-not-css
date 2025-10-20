@@ -1,9 +1,4 @@
 id,selector_id,layer_id,scope_root_id,scope_limit_id,prop,value,resp_kind,resp_min,resp_max,resp_axis,container_name,condition,supports_condition,origin_file,migration_id
-0c5cc550-0c74-551c-ba99-c4abaa7e8a1c,a91d6bae-525e-55ff-a18f-9e839a390c6f,,,,background,#fff,,,,,,,,/Users/cody/projects/notcss/icbincss/migrations/up/001_init.sql,001_init
-2044a995-ecf2-597c-887d-fe1380ca85ac,a91d6bae-525e-55ff-a18f-9e839a390c6f,,,,padding,token('space/4'),,,,,,,,/Users/cody/projects/notcss/icbincss/migrations/up/001_init.sql,001_init
-f422733c-4b87-569a-93c3-e3d9838d181c,c200aa63-ca83-5251-97c9-55b9ef192091,,,,background,token('brand/500'),,,,,,,,/Users/cody/projects/notcss/icbincss/migrations/up/001_init.sql,001_init
-a3e138ef-7ceb-5ad7-afcd-7a506b01683d,c200aa63-ca83-5251-97c9-55b9ef192091,,,,color,#fff,,,,,,,,/Users/cody/projects/notcss/icbincss/migrations/up/001_init.sql,001_init
-7f82d9d1-d0dc-52b5-9bdb-37c59132ec4f,a91d6bae-525e-55ff-a18f-9e839a390c6f,,,,display,grid,media,768px,,,,,(display: grid),/Users/cody/projects/notcss/icbincss/migrations/up/20251018192449__supports_mix.sql,20251018192449__supports_mix
 f568fae6-6d2a-5ba5-a8c4-1999a5b47413,ff101658-38ea-58bd-a2b1-1f46f8de6063,,,,background,token('accent/red'),,,,,,,,/Users/cody/projects/notcss/icbincss/migrations/up/20251018194435__test_comprehensive.sql,20251018194435__test_comprehensive
 374f6b34-47ec-592e-8cfe-38013477d316,ff101658-38ea-58bd-a2b1-1f46f8de6063,,,,padding,token('spacing/lg'),,,,,,,,/Users/cody/projects/notcss/icbincss/migrations/up/20251018194435__test_comprehensive.sql,20251018194435__test_comprehensive
 ea674819-b30b-5531-89de-6f178c93528b,ff101658-38ea-58bd-a2b1-1f46f8de6063,,,,color,white,,,,,,,,/Users/cody/projects/notcss/icbincss/migrations/up/20251018194435__test_comprehensive.sql,20251018194435__test_comprehensive
@@ -11,3 +6,7 @@ ea674819-b30b-5531-89de-6f178c93528b,ff101658-38ea-58bd-a2b1-1f46f8de6063,,,,col
 bb3ae075-db5c-5d6d-96c0-72251ed80f8a,1a003e62-3c20-5909-8a44-c5a22bacc041,,,,font_weight,bold,,,,,,,,/Users/cody/projects/notcss/icbincss/migrations/up/20251018194435__test_comprehensive.sql,20251018194435__test_comprehensive
 b7f93850-dec5-5026-b543-d258a8eed246,ff101658-38ea-58bd-a2b1-1f46f8de6063,,,,padding,64px,media,1024px,,,,,,/Users/cody/projects/notcss/icbincss/migrations/up/20251018194435__test_comprehensive.sql,20251018194435__test_comprehensive
 95780dff-f73c-579f-b5cc-272ffcea4ea5,ff101658-38ea-58bd-a2b1-1f46f8de6063,,,,background,#cc0000,container,800px,,,main,,,/Users/cody/projects/notcss/icbincss/migrations/up/20251018194435__test_comprehensive.sql,20251018194435__test_comprehensive
+154da684-763f-5298-9069-8d016b4cf332,a91d6bae-525e-55ff-a18f-9e839a390c6f,,,,background,#fff,,,,,,,,/Users/cody/projects/notcss/icbincss/migrations/up/002_change_button_color.sql,002_change_button_color
+b3674879-d6fd-5111-9b4e-05c3e40a0793,a91d6bae-525e-55ff-a18f-9e839a390c6f,,,,padding,token('space/4'),,,,,,,,/Users/cody/projects/notcss/icbincss/migrations/up/002_change_button_color.sql,002_change_button_color
+44bb84aa-91d4-5fe3-99b8-1b93035cfb90,c200aa63-ca83-5251-97c9-55b9ef192091,,,,background,token('brand/500'),,,,,,,,/Users/cody/projects/notcss/icbincss/migrations/up/002_change_button_color.sql,002_change_button_color
+f4a95cf4-6615-5960-af40-bfef1e054c47,c200aa63-ca83-5251-97c9-55b9ef192091,,,,color,#fff,,,,,,,,/Users/cody/projects/notcss/icbincss/migrations/up/002_change_button_color.sql,002_change_button_color
