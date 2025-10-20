@@ -5,6 +5,12 @@
 
   <p>Style websites using SQL instead of CSS. Database migrations for your styles.</p>
 
+  <h2>
+    <a href="https://www.youtube.com/watch?v=B-obd3MBNno">
+      ▶️ Watch the Product Release
+    </a>
+  </h2>
+
 [![npm](https://img.shields.io/npm/v/i-cant-believe-its-not-css.svg)](https://www.npmjs.com/package/i-cant-believe-its-not-css)
 [![node](https://img.shields.io/node/v/i-cant-believe-its-not-css.svg?label=node)](https://www.npmjs.com/package/i-cant-believe-its-not-css)
 [![install size](https://packagephobia.com/badge?p=i-cant-believe-its-not-css)](https://packagephobia.com/result?p=i-cant-believe-its-not-css)

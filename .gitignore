@@ -8,3 +8,5 @@ local
 .DS_Store
 .next/
 *.sqlite
+*.tgz
+icbincss/db/icbincss.sqlite
