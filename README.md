@@ -1,31 +1,28 @@
 <div align="center">
-  <img src="docs/logo.png" alt="ICBINCSS Logo" width="200" />
-</div>
+  <img src="docs/logo.png" alt="ICBINCSS Logo" width="400" />
 
-# 🧈 I Can't Believe It's Not CSS (ICBINCSS)
+  <h1>🧈 I Can't Believe It's Not CSS</h1>
+
+  <p>Style websites using SQL instead of CSS. Database migrations for your styles.</p>
 
 [![npm](https://img.shields.io/npm/v/i-cant-believe-its-not-css.svg)](https://www.npmjs.com/package/i-cant-believe-its-not-css)
 [![node](https://img.shields.io/node/v/i-cant-believe-its-not-css.svg?label=node)](https://www.npmjs.com/package/i-cant-believe-its-not-css)
 [![install size](https://packagephobia.com/badge?p=i-cant-believe-its-not-css)](https://packagephobia.com/result?p=i-cant-believe-its-not-css)
+[![Follow on X](https://img.shields.io/badge/follow-%40codyapearce-1DA1F2?logo=x&style=flat)](https://x.com/codyapearce)
+[![Follow on Bluesky](https://img.shields.io/badge/follow-%40codyapearce-0285FF?logo=bluesky&style=flat&logoColor=white)](https://bsky.app/profile/codyapearce.bsky.social)
 
-**Are you scared of CSS?**
-**Are you dreaming of new ways of avoiding touching the frontend?**
-**Are you a backend developer?**
+</div>
 
-**Then have we got a library for you.**
+## Features
 
-Style websites using **SQL instead of CSS**:
-
-- 🗄️ **View your styles in a real database** (Postgres or SQLite) - query with actual SQL
-- 🔄 **Database migrations for CSS** - full up/down support with rollback
-- 🔍 **Query your styles like data** - `SELECT * FROM styles WHERE resp_kind = 'media'`
-- 🎯 **Conflict detection before you ship** - doctor command catches specificity issues, shorthand/longhand conflicts, unreachable rules
-- 🧹 **Unused code detection** - finds unused tokens and unreachable styles
-- 🔒 **Checksum drift detection** - warns if you edit applied migrations
-- ✅ **All CSS features supported** - @layer, @container, @supports, @font-face, @keyframes, @property, @scope, etc.
-- 📊 **Full audit trail** - migration history with checksums and timestamps
-- 🚀 **Zero runtime overhead** - compiles to plain CSS
-- 🔧 **Works everywhere** - React, Vue, Angular, vanilla HTML, CommonJS or ESM
+- 🗄️ **Real database storage** - Postgres or SQLite with full SQL queries
+- 🔄 **Migration system** - Up/down migrations with rollback support
+- 🎯 **Conflict detection** - Catch specificity issues and shorthand/longhand conflicts
+- 🔍 **Query your styles** - `SELECT * FROM styles WHERE resp_kind = 'media'`
+- 📊 **Full audit trail** - Migration history with checksums and timestamps
+- ✅ **Complete CSS support** - @layer, @container, @supports, @font-face, @keyframes, @property, @scope
+- 🚀 **Zero runtime** - Compiles to plain CSS
+- 🔧 **Universal** - Works with React, Vue, Angular, vanilla HTML (CommonJS or ESM)
 
 ```sql
 -- migrations/up/001_init.sql
